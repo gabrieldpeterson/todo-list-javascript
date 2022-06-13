@@ -1,5 +1,12 @@
 import { domBuilder } from "./domBuilder";
+import Card from "./card";
 
-console.log('test2');
+console.log("test2");
+let cardList = [];
 
-domBuilder();
+domBuilder.buildSkeleton();
+
+cardList.push(new Card("test1"));
+cardList.push(new Card("test2"));
+
+cardList.forEach((card) => card.info());
