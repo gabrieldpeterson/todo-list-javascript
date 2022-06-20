@@ -9,3 +9,6 @@ cardList.push(new Card('test1'));
 cardList.push(new Card('test2'));
 
 cardList.forEach((card) => card.info());
+
+// test
+domBuilder.buildCard();

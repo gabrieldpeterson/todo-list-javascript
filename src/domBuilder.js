@@ -43,7 +43,14 @@ const domBuilder = (() => {
     body.appendChild(content);
   }
 
-  return { buildSkeleton }
+  const buildCard = () => {
+    // test
+    const testDiv = document.createElement('div');
+    testDiv.textContent = 'Build card test';
+    body.appendChild(testDiv);
+  }
+
+  return { buildSkeleton, buildCard }
 })();
 
 export { domBuilder };
