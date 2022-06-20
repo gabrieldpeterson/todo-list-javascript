@@ -11,4 +11,4 @@ cardList.push(new Card('test2'));
 cardList.forEach((card) => card.info());
 
 // test
-domBuilder.buildCard();
+domBuilder.buildCard(cardList[0]);

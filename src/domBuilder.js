@@ -43,11 +43,11 @@ const domBuilder = (() => {
     body.appendChild(content);
   }
 
-  const buildCard = () => {
+  const buildCard = (card) => {
     // test
-    const testDiv = document.createElement('div');
-    testDiv.textContent = 'Build card test';
-    body.appendChild(testDiv);
+    const cardDiv = document.createElement('div');
+    cardDiv.textContent = card.name;
+    body.appendChild(cardDiv);
   }
 
   return { buildSkeleton, buildCard }
